@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.exercise-2 {
+    background-color: #008000;
+    margin: 5em;
+    padding: 5em;
+    border: solid;
+    box-shadow: 10px 5px 5px black;
+}
+
+.main {
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 200px;
+    margin-left: auto;
+    /* border: solid;
+    border-width: 2px; */
+    /* border-color: gainsboro; */
+}
+
+
+/* CSS Advanced  */
+
+.css1 {
+    margin-left: 150px;
+}
+
+.grey {
+    background-color: gray;
+    width: 200px;
+    margin-left: 200px;
+    padding: 5em;
+    border-style: ridge;
+    border-width: 2px;
+    border-color: gainsboro;
+}
+
+.orange {
+    background-color: orange;
+    padding: 3em;
+    height: 1em;
+    margin-left: 30px;
+    width: 30px;
+}
