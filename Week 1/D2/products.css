@@ -1,3 +1,15 @@
-.nav-link {
+.nav {
     display: inline;
+    position: absolute;
+    justify-content: right;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: blue;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
 }
