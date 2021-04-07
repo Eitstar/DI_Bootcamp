@@ -2,19 +2,26 @@
              background-color: #d5d5d6;
              color: #968c83;
              font-family: 'Montserrat', sans-serif;
-             padding: 0%;
+             padding: 20px;
              margin: 0%;
+             box-sizing: border-box;
+             position: relative;
+             height: 100vh;
          }
          
          nav * {
              list-style-type: none;
              color: #968c83;
-             right: 0%;
              margin: 10px;
              text-align: right;
-             display: inline;
+             display: inline-block;
+         }
+         
+         .navebar .nav {
+             width: 30%;
+             display: inline-block;
              float: right;
-             right: 20px;
+             text-align: right;
          }
          
          hr {
@@ -36,14 +43,8 @@
          }
          
          .icon {
-             float: left;
              height: 5rem;
              width: 5rem;
-             padding: 0;
-             margin: 0px 10px;
-             position: relative;
-             left: 30px;
-             top: 20px;
          }
          
          .navup {
@@ -84,46 +85,58 @@
          
          .buttom {
              position: absolute;
-             left: 500px;
-             bottom: 300px;
-             /* width: 50%; */
-             text-align: center;
-             height: 20px;
-             padding: 20px;
-             margin: 30px;
+             bottom: 0;
+             left: 50%;
+             transform: translateX(-50%);
          }
          /* Sing-up page */
          
-         input,
+         input {
+             border-radius: 4px;
+             border: 1px solid #dcdcdc;
+             padding: 4px 6px;
+             margin-left: 8px;
+             width: 200px;
+         }
+         
          label {
-             position: absolute;
-             /* right: 200px;
-             bottom: 100px; */
-             width: 70%;
-             padding: 10px 20px;
-             margin: 30px;
-             box-sizing: border-box;
-             border-radius: 8%;
+             min-width: 82px;
+             display: inline-block;
+             text-align: left;
+             text-transform: capitalize;
          }
          
          .tom {
-             border-radius: 10%;
-             font-size: 14px;
-             background-color: #e2d5d5;
+             border-radius: 4px;
+             font-size: 16px;
              font-family: 'Montserrat', sans-serif;
              font-weight: 600;
-             padding: 0;
              margin: 0;
+             border: 1px solid #dcdcdc;
+             background-color: #fff;
+             padding: 8px;
+             width: 124px;
          }
          
          .formsl {
-             position: relative;
-             top: 200px;
-             left: 200px;
-             border-radius: 10%;
+             border-radius: 4px;
              font-size: 14px;
-             background-color: #e2d5d5;
+             background-color: #d5d5d6;
              font-family: 'Montserrat', sans-serif;
              font-weight: 600;
-             padding: 0;
+             padding: 30px;
+             text-align: center;
+             width: 50%;
+             position: absolute;
+             left: 50%;
+             top: 57%;
+             transform: translate(-50%, -57%);
+         }
+         
+         .formsl.signup {
+             margin-top: 70px;
+         }
+         
+         .form-group {
+             margin-bottom: 16px;
          }
