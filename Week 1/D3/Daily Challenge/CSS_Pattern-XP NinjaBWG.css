@@ -1,0 +1,51 @@
+ .divs4 {
+     display: flex;
+     align-items: flex-start;
+     flex-wrap: nowrap;
+     align-content: stretch;
+ }
+ 
+ .lightcolor {
+     background-color: #bbbbbb;
+     margin-right: 4px;
+     margin-bottom: 4px;
+     height: 40px;
+     width: 40px;
+ }
+ 
+ .ninjaBWGgrey {
+     background-color: #8e7f7f;
+     margin-right: 4px;
+     margin-bottom: 4px;
+     height: 40px;
+     width: 40px;
+ }
+ 
+ .darkgreye {
+     background-color: #534e52;
+     margin-right: 4px;
+     margin-bottom: 4px;
+     height: 40px;
+     width: 40px;
+ }
+ 
+ .ninjaBWGgreydark {
+     background-color: #151515;
+     height: 40px;
+     width: 40px;
+ }
+ 
+ .ninjaBWG {
+     border: 2px solid black;
+ }
+ 
+ .p {
+     font-size: 1px;
+ }
+ 
+ body {
+     min-width: fit-content;
+     max-width: fit-content;
+     min-height: fit-content;
+     max-height: fit-content;
+ }

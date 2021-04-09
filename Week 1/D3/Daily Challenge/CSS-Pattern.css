@@ -1,0 +1,60 @@
+          .masterdiv {
+              display: flex;
+              justify-content: center;
+              border-bottom: 2px solid black;
+              border-top: 2px solid lightgrey;
+          }
+          
+          .div1flexbox {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: flex-end;
+          }
+          
+          .div2flexbox {
+              display: flex;
+              justify-content: center;
+              align-self: center;
+              margin: 40px;
+              padding: 0px 40px;
+          }
+          
+          .divflexbox {
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+          }
+          
+          .box1,
+          .box2,
+          .box3,
+          .box4,
+          .box9,
+          .box10,
+          .box11,
+          .box12 {
+              background-color: yellow;
+              border: 3px solid black;
+              padding: 0;
+              margin: 5px;
+              height: 150px;
+              width: 150px;
+          }
+          
+          .box5,
+          .box6,
+          .box7,
+          .box8 {
+              background-color: yellow;
+              border: 3px solid black;
+              height: 150px;
+              width: 150px;
+              margin: 30px;
+          }
+          
+          .p {
+              font-size: 1px;
+              padding: 0px;
+              margin: 0px;
+          }

@@ -1,0 +1,39 @@
+.divs4 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.whitemap {
+    background-color: white;
+    height: 40px;
+    width: 40px;
+}
+
+.redishcolor {
+    background-color: #ff8585;
+    height: 40px;
+    width: 40px;
+}
+
+.redorcolor {
+    background-color: #ef4f4f;
+    height: 40px;
+    width: 40px;
+}
+
+.NinjaMap {
+    border: 3px solid #ef4f4f;
+    outline: 2px solid black;
+}
+
+.p {
+    font-size: 1px;
+}
+
+body {
+    min-width: fit-content;
+    max-width: fit-content;
+    min-height: fit-content;
+    max-height: fit-content;
+}

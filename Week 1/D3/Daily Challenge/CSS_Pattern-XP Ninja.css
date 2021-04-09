@@ -1,0 +1,44 @@
+ .divs4 {
+     display: flex;
+ }
+ 
+ .orange {
+     background-color: #e45826;
+     margin-right: 4px;
+     margin-bottom: 4px;
+     height: 40px;
+     width: 40px;
+ }
+ 
+ .lightorange {
+     background-color: #eeb76b;
+     margin-right: 4px;
+     margin-bottom: 4px;
+     height: 40px;
+     width: 40px;
+ }
+ 
+ .brown {
+     background-color: #864000;
+     margin-right: 4px;
+     margin-bottom: 4px;
+     height: 40px;
+     width: 40px;
+ }
+ 
+ .ninja {
+     border: 2px solid black;
+     box-sizing: border-box;
+     ;
+ }
+ 
+ .p {
+     font-size: 1px;
+ }
+ 
+ body {
+     min-width: fit-content;
+     max-width: fit-content;
+     min-height: fit-content;
+     max-height: fit-content;
+ }
