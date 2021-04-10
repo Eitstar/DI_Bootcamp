@@ -59,7 +59,7 @@
         }
         
         body {
-            margin: 0;
+            /* margin: 0; */
             font-family: 'Montserrat', sans-serif;
             font-weight: 400;
             line-height: 1.5;
@@ -89,8 +89,9 @@
         }
         
         p {
-            /* margin-top: 0; */
+            margin-top: 0;
             margin-bottom: 1rem;
+            font-size: medium;
         }
         
         abbr[title],
@@ -10278,7 +10279,7 @@
         }
         
         body {
-            /* letter-spacing: 0.0325em; */
+            letter-spacing: 0.0625em;
             font-family: 'Montserrat', sans-serif;
             ;
         }
@@ -10439,6 +10440,7 @@
         
         .about-section {
             padding-bottom: 10rem;
+            padding-top: 10rem;
         }
         
         .projects-section {
@@ -10461,14 +10463,14 @@
             font-size: 90%;
         }
         
-        @media (min-width: 700px) {
+        @media (min-width: 600px) {
             .projects-section .project-text {
                 padding: 5rem;
             }
             .projects-section .project-text hr {
                 border-color: #64a19d;
                 border-width: 0.25rem;
-                width: 30%;
+                width: 40%;
             }
         }
         
@@ -10541,31 +10543,31 @@
         }
         
         .central_head {
-            display: inline-flex;
+            display: flex;
             justify-content: center;
             align-items: center;
-            padding-top: 10%;
-            max-width: 60%;
         }
         
         .central_img {
+            flex-direction: column;
             align-self: center;
-            padding-right: 25px;
-            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            padding-right: 100px;
+            margin-bottom: 100px;
         }
         
         .head_central-text {
+            flex-direction: column;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
             font-family: 'Montserrat', sans-serif;
             font-weight: 400;
             text-align: justify;
-            text-justify: inter-word;
+            width: 40%;
+            /* text-justify: inter-word; */
         }
-        /*             
-            .central_text {
-                text-align: justify;
-                text-justify: inter-word;
-                justify-content: center;
-            } */
         
         .projects-section {
             display: flex;
@@ -10581,14 +10583,14 @@
             font-weight: 400;
             text-align: center;
             font-size: small;
-            width: 60%;
         }
         
         .fash_pic_row,
         .resume_pic_row,
         .tindog_pic_row {
             display: block;
-            margin: 0px 20px;
+            margin: 20px;
+            /* width: 60%; */
         }
         
         .resume-web,
@@ -10600,8 +10602,17 @@
             align-items: center;
             width: 400px;
             height: 400px;
+            margin: 20px;
         }
         
         .fash-web {
             margin: 0px 10px;
+        }
+        
+        .fasimg {
+            height: 250px;
+        }
+        
+        .central_img {
+            align-items: center;
         }

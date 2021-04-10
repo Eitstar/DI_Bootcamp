@@ -5,21 +5,220 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="CSS.Animation" href="https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/">
+
+    <title>Eitan_page</title>
 
     <style type="text/css">
-        body>div {
+        .wraping {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        body,
+        div {
             width: 483px;
             height: 298px;
             transition: all 0.3s ease;
+            text-align: center;
+            font-size: 5px;
+            margin: 20px;
+        }
+        
+        img {
+            height: 200px;
+            width: 200px;
+        }
+        /* 1. fade in */
+        
+        .fade {
+            opacity: 0.5;
+        }
+        
+        .fade:hover {
+            opacity: 1;
+        }
+        /* 2.Change color */
+        
+        .color:hover {
+            background: #53a7ea;
+        }
+        /* 3  & 4 Grow & Shrink */
+        
+        .grow:hover {
+            -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+        
+        .shrink:hover {
+            -webkit-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            transform: scale(0.8);
+        }
+        /* 5 Rotate elements */
+        
+        .rotate:hover {
+            -webkit-transform: rotateZ(-30deg);
+            -ms-transform: rotateZ(-30deg);
+            transform: rotateZ(-30deg);
+        }
+        /* 6. circle  elements */
+        
+        .circle {
+            border-radius: 50%;
+        }
+        /* 
+        7. 3D shadow */
+        
+        .threed:hover {
+            box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+            -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+        }
+        /* 8. swing */
+        
+        @-webkit-keyframes swing {
+            15% {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+            }
+            30% {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+            50% {
+                -webkit-transform: translateX(3px);
+                transform: translateX(3px);
+            }
+            65% {
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+            80% {
+                -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+            }
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes swing {
+            15% {
+                -webkit-transform: translateX(5px);
+                transform: translateX(5px);
+            }
+            30% {
+                -webkit-transform: translateX(-5px);
+                transform: translateX(-5px);
+            }
+            50% {
+                -webkit-transform: translateX(3px);
+                transform: translateX(3px);
+            }
+            65% {
+                -webkit-transform: translateX(-3px);
+                transform: translateX(-3px);
+            }
+            80% {
+                -webkit-transform: translateX(2px);
+                transform: translateX(2px);
+            }
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+        
+        .swing:hover {
+            -webkit-animation: swing 1s ease;
+            animation: swing 1s ease;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+        }
+        /* 9.  Inset border */
+        
+        .border:hover {
+            box-shadow: inset 0 0 0 25px #53a7ea;
         }
     </style>
 </head>
 
 <body>
+    <section class="wraping">
+        <div class="fade">
+            <img class="img" src="img/cookingfood.png" alt="cocking">
+        </div>
+
+        <!-- /* 2.Change color */ -->
+        <div class="color">
+
+            <img class="img" src="img/backgroundpic.jpg" alt="cocking">
+        </div>
+
+        <!-- 3  & 4 Grow & Shrink  -->
+
+        <div class="grow">
+            <img src="img/backgroundpic.jpg" alt="sunrise">
+
+        </div>
+
+        <!-- 3  & 4 Grow & Shrink  -->
+
+        <div class="shrink">
+            <img src="img/sunset.jpg" alt="sunrise"></div>
+
+        <!-- Rotate elements -->
+
+        <div class="rotate ">
+            <img src="img/TelAviv.png" alt="sunrise"></div>
+
+        <!-- Square to circle -->
+        <div class="circle">
+            <img src="img/road.jpg" alt="road"></div>
+
+        <div class="threed"><img src="img/ketem.png" alt="sunrise"></div>
+
+        <!--  /* 8. swing */ -->
+
+        <div class="swing"> <img src="img/sunset.jpg" alt="sunrise"></div>
+        <!-- /* 9.  Inset border */  -->
+
+        <div class="border"> <img src="img/forest.jpg" alt="forest"></div>
+    </section>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">Copyright ©Eitan Marks 2021</div>
 </body>
 
 </html>
