@@ -146,24 +146,3 @@
     else {
         console.log('users [0],[1] are [2] more are online.');
     }
-
-
-
-
-    // If there is 1 user, console.log “<name_user> is online”.
-
-    // else if (users.length - 1]) {
-    // console.log ("no one is online.") };
-
-
-
-
-
-
-    // 
-    // If there is 1 user, console.log “<name_user> is online”.
-    // If there are 2 users, console.log “<name_user1> and <name_user2> are online”.
-    // If there are more than 2 users, console.log the first two names in the users array and the number of additional users online.
-    // For example, if there are 5 users, it should display:
-
-    // name_user1, name_user2 and 3 more are online
