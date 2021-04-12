@@ -15,11 +15,11 @@
 
 // 1. Remove Banana from the array.:
 
-// let fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
+let fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
 // console.log(fruits);
 
-// fruits.slice(0, 1);
-// console.log(fruits);
+fruits.splice(0, 1);
+console.log(fruits);
 
 
 // 2.Sort the array in alphabetical order
@@ -71,6 +71,6 @@
 // Access and then console.log “Oranges”:
 
 
-let moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
-let orange = moreFruits[1][1]
-console.log(orange)
+// let moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+// let orange = moreFruits[1][1]
+// console.log(orange)
