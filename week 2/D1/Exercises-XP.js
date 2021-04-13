@@ -104,3 +104,8 @@
 // the correct  answer is: 
 // The global NaN property is a value representing Not-A-Number.
 // when the string isnt a numaric ithis shuld be the answer
+
+ let moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+  console.log(moreFruits)
+//  let orange = moreFruits[1][1]
+//  console.log(orange)

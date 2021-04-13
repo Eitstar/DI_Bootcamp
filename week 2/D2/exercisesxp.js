@@ -1,55 +1,52 @@
     // Exercise 1: Simple If/Else Statement
 
     // 1.  Create 2 variables, x and y. Each of them should have a different numeric value.
-    //     let x = 5
-    //     let y = 2
-
+    let x = 5
+    let y = 2
 
     // 2. Write an if/else statement that checks which number is bigger.
 
-    //     if (y > x) {
-    //         console.log("try harder !!")
-    //     } else if (x < y) {
-    //         console.log("almost !!")
+    if (y > x) {
+        console.log("try harder !!")
+    } else if (x < y) {
+        console.log("almost !!")
 
-    // If x equals 5 and y equals 2, the program should display:
+        // If x equals 5 and y equals 2, the program should display:
 
-    // x is the biggest number
+        // x is the biggest number
 
-    //     } else if (x == 5 && y == 2) {
-    //         console.log("x is the biggest number !!")
-    //     }
-
-
+    } else if (x == 5 && y == 2) {
+        console.log("x is the biggest number !!")
+    }
 
     //     Exercise 2: Chihuahua
     //    1 // Create a variable called newDog where it’s value is “Chihuahua”.
 
-    //     let newDog = "Chihuahua";
-    //     //    console.log(newDog) 
+    let newDog = "Chihuahua";
+    console.log(newDog)
 
     //   2  // Check and display how many letters are in newDog.
 
-    //     newDog = newDog.length
-    //     console.log(newDog);
+    newDog = newDog.length
+    console.log(newDog);
 
     //   3 // Display the newDog variable in uppercase and then in lowercase (no need to create new variables, just console.log twice).
-    //     let newDog = "Chihuahua";
-    //     newDog.toLowerCase();
-    //     console.log(newDog.toLowerCase());
+    let newDog = "Chihuahua";
+    newDog.toLowerCase();
+    console.log(newDog.toLowerCase());
 
-    //     let newDog = "Chihuahua";
-    //     newDog.toUpperCase();
-    //     console.log(newDog.toUpperCase());
+    let newDog = "Chihuahua";
+    newDog.toUpperCase();
+    console.log(newDog.toUpperCase());
 
     //    4 // Check if the variable newDog is equal to “Chihuahua”
 
-    // let newDog = "Chihuahua"
+    let newDog = "Chihuahua"
 
-    // if it does, display ‘I love Chihuahuas, it’s my favorite dog breed’
-    // if (newDog = "Chihuahua") {
-    //     console.log("I love Chihuahuas, it’ s my favorite dog breed ")
-    // } else if (newDog != "Chihuahua") { console.log(" dont care, I prefer cats"); }
+    if it does, display‘ I love Chihuahuas, it’ s my favorite dog breed’
+    if (newDog = "Chihuahua") {
+        console.log("I love Chihuahuas, it’ s my favorite dog breed ")
+    } else if (newDog != "Chihuahua") { console.log(" dont care, I prefer cats"); }
 
 
     // Exercise 3: Even Or Odd
