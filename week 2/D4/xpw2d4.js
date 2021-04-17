@@ -152,8 +152,6 @@
 // 2. Tip 15% when the bill is between $50 and $200,
 // 3. Tip 10% if the bill is more than $200.
 
-let tip1
-
 
 // Ask John for the amount of the bill.
 // Create the program explained above.
@@ -161,3 +159,21 @@ let tip1
 // Tip amount.
 // Final bill (bill + tip).
 // (NOTE: To calculate 20% of a value, simply multiply it with 20/100 = 0.2)
+
+
+// let myGlobal = 10;
+// let oopsGlobal = 5;
+
+// function fun2() {
+//     let output = "";
+//     if (typeof myGlobal != "undefined") {
+//         output += "myGlobal:" + myGlobal;
+//     }
+//     if (typeof oopsGlobal != "undefined") {
+//         output += " oopsGlobal:" + oopsGlobal;
+//     }
+//     console.log(output);
+// }
+// fun2();
+
+// str.substring(1, 4) == str.substring(4, 1).
