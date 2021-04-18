@@ -24,3 +24,15 @@ if (wordNot < wordBad) {
 
 let twoArr = sentenceArray.join(" ")
 console.log(twoArr)
+
+
+3. Deleting Object Properties
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+};
+delete person.firstName
+console.log(person)
+    // {
+    //   lastName: "Doe",
+    // };
