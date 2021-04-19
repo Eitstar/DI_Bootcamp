@@ -1,24 +1,26 @@
 function playTheGame() {
 
-    let user = confirm(`Press a button!`);
+    let user = confirm(`pleae Press a ok to entire the game !`);
 
     if (!user) {
         return alert(`No problem, Goodbye!`)
     }
 
-    user = prompt(`enter a number between 0 and 10`)
-    if (isNaN(parseInt(user))) {
+    let newNumber = prompt(`enter a number between 0 and 10`)
+    if (isNaN(parseInt(newNumber))) {
         return alert(`Sorry not a number, goodbye`)
     }
 
-    if (user < 0 || user > 10) {
+    if (newNumber <= 0 || newNumber >= 10) {
+        console.log(newNumber)
         return alert(`Sorry it’s not a good number, Goodbye`)
     }
-
     let computerNumber = Math.floor(Math.random() * 10);
     console.log(computerNumber)
 }
 
+let computerNumber = "";
+let userNumber = "";
 
 playTheGame()
 
@@ -34,4 +36,4 @@ function test(userNumber, computerNumber) {
     }
     return alert(`out of chances`)
 }
-test(userNumber, computerNumber);
+test(userNumber, computerNumber)
