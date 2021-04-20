@@ -1,68 +1,56 @@
 // Exercise 1: Keyless Car
 
-// 1. Ask the user for their age, and save the value to a variable. Create a
+// 1. Ask the user
+// for their age, and save the value to a variable.Create a
 
 // let userAge = prompt("How old are you?");
-
 // console.log(userage)
 
 
 
 // 2.
-
 // function called checkDriverAge() that will notify the user
-
-
-// function checkDriverAge() {
-//     let userAge = prompt("How old are you?");
-//     if (userAge < 18) {
-//         alert("Sorry, you are too young to drive this car.Powering off");
-//     } else if (userAge > 18) {
-//         alert("You are old enough to drive, Powering On.Enjoy the ride!”");
-//     } else if (userAge = 18) {
-//         alert("Congratulations on your first year of driving.Enjoy the ride!”");
-//     }
-// }
-// checkDriverAge()
-
-
 // 3 Instead of using prompt to ask the user
 // for their age,
 // have the checkDriverAge()
-// function accept an argument age.
-
 
 // function checkDriverAge(userAge) {
 //     if (userAge < 18) {
 //         alert("Sorry, you are too young to drive this car.Powering off");
 //     } else if (userAge > 18) {
 //         alert("You are old enough to drive, Powering On.Enjoy the ride!”");
-//     } else if (userAge === 18) {
+//     } else if (userAge == 18) {
 //         alert("Congratulations on your first year of driving.Enjoy the ride!”");
 //     }
-//     console.log(checkDriverAge)
 // }
-// checkDriverAge()
+// checkDriverAge(1);
+
 
 
 
 // Exercise 2: What’ s In My Wallet ?
 
 // Given a item price and an array representing the amount of change in your pocket,
-//  determine whether or not you can afford the item.
+//     determine whether or not you can afford the item.
 // Change will always be represented in the following order: quarters, dimes, nickels, pennies.
 // Quarters = 0.25
 // Dimes = 0.10
 // Nickels = 0.05
 // Pennies = 0.01
-// To illustrate:
-//     changeEnough([25, 20, 5, 0], 4.25) should
-// return true, since having 25 quarters, 20 dimes, 5 nickels and 0 pennies gives you 6.25 + 2 + .25 + 0 = 8.50 which is bigger than 4.25(the total amount due)
 
-// Examples
+// function mywallet(moneyString, money) {
+//     let change = [0.25, 0.10, 0.05, 0.01];
+//     let changeLeft = 0;
 
-// changeEnough([2, 100, 0, 0], 14.11)➞ false
-// changeEnough([0, 0, 20, 5], 0.75)➞ true
+//     for (let i = 0; i < change.length; i++) {
+//         changeLeft += change[i] * money[i];
+//     }
+//     if (changeLeft > moneyString) {
+//         return true;
+//     } else { return false; }
+// }
+// mywallet([0, 0, 20, 5], 0.75);
+
 
 
 // Exercise 3: Find The Multiples Of 23
@@ -97,7 +85,7 @@
 
 // function checkBasket(obj) {
 //     if (items in obj) {
-//         //         console.log(items)
+//         console.log(items)
 //     } else {
 //         console.log("we don't have it")
 //     }
@@ -124,23 +112,20 @@
 // }
 
 
-// shoppingLists = Object.keys(stock)
-// console.log(shoppingList1)
-
-// let shoppingList = ["banana", "apple", "pear", "orange", "blueberry"]
+// let shoppingList = ["banana", "apple", "orange"]
 
 // function myBill() {
-// for (let i = 0; i < shoppingList.length; i++) {
-//     console.log(shoppingList)
-//         console.log(nshoppingListme[i].indexOf(
+//     let total0ff = 0;
+//     for (let i = 0; i < shoppingList[i]; i++) {
+
+//         if (shoppingList[i] in prices) {
+//             total0ff += prices;
+//         }
 //     }
-//     if {} else {}
-//     ()
+//     console.log(total0ff);
+//     return total0ff;
 // }
-// {
-//     ()
-// }
-//     myBill()
+// myBill()
 
 
 // Exercise 6 : Tips

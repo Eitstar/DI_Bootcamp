@@ -1,0 +1,14 @@
+div {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+#bor {
+    border-style: dotted;
+    border-width: 2px;
+    border-color: brown;
+}
+
+body {
+    font-size: xx-large;
+}
