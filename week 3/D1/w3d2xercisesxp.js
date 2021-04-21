@@ -10,11 +10,10 @@
 // console.log(barName)
 
 // 2// We are going to add a new <li> to the <ul>.
-// 1// First, create a new <li> tag (use the createElement method).
+// 1 First, create a new <li> tag (use the createElement method).
 // 2 Create a new text node with “Logout” as its specified text.
 // 3 Append the text node to the newly created list node (li).
 //  4 Finally, append this updated list node to the unordered list above, using the appendChild method.v 4
-//
 
 // let node = document.createElement("LI");
 // let textnode = document.createTextNode("Logout");

@@ -25,7 +25,7 @@ console.log(inSection)
 //  3rd step we added a class for each loop( after it created a div) and we ask to name it and to add to the name a 2nd name taken from the array.
 // Last step we need to append the added loop.
 function planetDivs() {
-
+    //
     for (let j = 0; j <= arrPlanents.length - 1; j++) {
         let div = document.createElement("div");
         div.classList.add("planet", arrPlanents[j])
