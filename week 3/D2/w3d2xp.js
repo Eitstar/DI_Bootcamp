@@ -50,3 +50,24 @@ button.appendChild(addbutton);
 addbutton.addEventListener("click", function() {
     addbutton.style.fontWeight = 'bold';
 })
+
+
+
+
+// function getBoldItems() {
+//     let boldItems = document.querySelectorAll("#paragraph strong");
+//     return boldItems;
+// }
+
+// let boldItem = getBoldItems();
+
+// function highlight() {
+//     for (let i = 0; i < boldItem.length; i++) {
+//         boldItem[i].classList.toggle("changeColoryellow")
+//     }
+// }
+
+// let p = document.querySelector("#paragraph");
+// p.addEventListener("mouseover", highlight)
+
+// p.addEventListener("mouseout", highlight)
