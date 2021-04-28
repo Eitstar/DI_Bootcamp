@@ -29,18 +29,11 @@ let inventory = [
 // myFunction(carInventory)
 // function displayCars() {
 
-//     inventory[0].id + " " + inventory[0].car_year + "<br>" +
-//         inventory[1].id + " " + inventory[1].car_year + "<br>" +
-//         inventory[2].id + " " + inventory[2].car_year;
-//     inventory[3].id + " " + inventory[1].car_year + "<br>" +
-//         inventory[4].id + " " + inventory[2].car_year;
-
-//     displayCars()
 
 
 
-// const sortCarInventoryByYear = (arr) => {
-//     let sortedArray = arr.sort((a, b) => a.car_year - b.car_year);
-//     return sortedArray;
-// };
-// console.log(sortCarInventoryByYear(inventory));
+const sortCarInventoryByYear = (carInventory) => {
+    let sortedArray = carInventory.sort((a, b) => a.car_year - b.car_year);
+    return sortedArray;
+};
+console.log(sortCarInventoryByYear(inventory));
