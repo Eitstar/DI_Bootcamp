@@ -1,0 +1,96 @@
+ #content {
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 20px;
+ }
+ 
+ body {
+     background-color: #3399ff;
+ }
+ 
+ header {
+     display: grid;
+     grid-column: auto;
+     flex-direction: row;
+     justify-content: center;
+ }
+ 
+ .icon {
+     border-radius: 25%;
+     height: 50px;
+     width: 50px;
+ }
+ 
+ h1 {
+     color: white;
+     font-size: 50px;
+     font-family: 'Montserrat', sans-serif;
+ }
+ 
+ #start {
+     color: white;
+     font-size: 20px;
+ }
+ 
+ td {
+     color: white;
+     border: 6px solid black;
+     height: 100px;
+     width: 100px;
+     text-align: center;
+     vertical-align: middle;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 70px;
+     cursor: pointer;
+ }
+ 
+ table {
+     border-collapse: collapse;
+     position: absolute;
+     left: 50%;
+     margin-left: -155px;
+     top: 50px;
+     margin-top: 200px;
+ }
+ 
+ table tr:first-child td {
+     border-top: 0;
+ }
+ 
+ table tr:last-child td {
+     border-bottom: 0;
+ }
+ 
+ table tr td:first-child {
+     border-left: 0;
+ }
+ 
+ table tr td:last-child {
+     border-right: 0;
+ }
+ 
+ .endgame {
+     display: none;
+     width: 200px;
+     top: 120px;
+     background-color: rgba(106, 165, 224, 0.9);
+     position: relative;
+     left: 50%;
+     margin-left: -100px;
+     margin-top: -50px;
+     padding-top: 50px;
+     padding-bottom: 50px;
+     text-align: center;
+     border-radius: 5px;
+     color: white;
+     font-weight: bold;
+     font-size: 2em;
+ }
+ 
+ button {
+     font-size: 35px;
+     border-radius: 25px;
+     background-color: #1a53ff;
+     border-color: #1a53ff;
+     color: white;
+ }

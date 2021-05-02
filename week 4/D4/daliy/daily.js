@@ -12,16 +12,18 @@ class Video {
 class classVideo extends Video {
     constructor(title, uploader, time) {
         super();
-        return console.log((watch))
+        // return console.log((watch))
     }
 }
 class classicVideo extends Video {
     constructor(title, uploader, time) {
         super();
-        this.filemd = filemd
-        this.editor = editor
+        getFullInfo()
 
-        return console.log((watch))
+        this.filemdby = filemdby
+        this.editor = editor
+            // return (`${this.fillmedby} "Eitan" ${this.editor}`)
+
     }
 }
 let a = new Video();
