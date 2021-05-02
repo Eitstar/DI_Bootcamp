@@ -1,21 +1,19 @@
 let userInput = () => {
-    document.getElementById('daily');
+    let = document.getElementById("daily").addEventListener("submit", function(event) {
+        event.preventDefault()
+    });
+
     let name = daily.elements.name.value;
     let lastname = daily.elements.lastname.value;
-
     let userDetails = {
-        name: daily.name.value,
-        lastname: daily.lastname.value,
+        name: name,
+        lastname: lastname,
     }
     console.log(JSON.stringify(userDetails, null, 2));
+    console.log(userDetails);
 
 
 }
 
+
 userInput();
-
-
-// console.log(userDetails);
-
-console.log(daily.elements.name);
-console.log(daily.elements.lastname);
