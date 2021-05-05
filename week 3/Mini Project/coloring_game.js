@@ -1,39 +1,19 @@
-let color = null;
+let color;
 let mousedown = false;
 
-// let leftScreen = document.getElementById("leftSide");
-// console.log(leftScreen)
-
-function leftDiv() {
-    for (let i = 0; i < 21; i++) {
-        let newdiv = document.createElement("div")
-        addEventListener
-        newdiv.classList.add("leftDivs", [i])
-        random = Math.floor(Math.random() * newdiv.length)
-        newdiv[i];
-
-        leftScreen.appendChild(newdiv)
-    }
-}
-// leftDiv()
-let addedDivs = document.getElementsByClassName(" main")[0];
-console.log(addedDivs)
-let clearButton = document.getElementsByTagName("button")[0];
+let body = document.getElementsByTagName("body")[0];
 
 let colorBlocks = document.querySelectorAll(".sidebar > *");
 
-for (let i = 0; i < 1000; i++) {
-    let addedDivs = document.createElement("div")
-    addEventListener
-    addedDivs.classList.add("right", [i])
-    main.appendChild(addedDivs)
-}
-// for (let i = 0; i <= 1030; i++) {
-//     let rightSide = document.createElement('div');
-//     main.appendChild(rightSide);
-// }
-let emptyBlock = document.querySelectorAll(".main > *");
+let main = document.querySelector(".main ");
+let clearButton = document.getElementsByTagName("button")[0];
 
+for (let i = 0; i <= 1039; i++) {
+    let creatEmptyBlock = document.createElement('div');
+    main.appendChild(creatEmptyBlock);
+}
+let emptyBlock = document.querySelectorAll(".main > *");
+console.log(emptyBlock)
 
 clearButton.addEventListener("click", function() {
     for (let block of emptyBlock) {
