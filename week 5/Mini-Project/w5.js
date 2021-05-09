@@ -1,10 +1,10 @@
 let xhr = new XMLHttpRequest(); //step 1
-
-let character = document.getElementsByTagName("h3")
-let height = document.getElementsByTagName("h3")
-let gender = document.getElementsByTagName("h3")
-let birthYear = document.getElementsByTagName("h3")
-let homeWorld = document.getElementsByTagName("h3")
+let homeworld;
+// let character = document.getElementsByTagName("h3")
+// let height = document.getElementsByTagName("h3")
+// let gender = document.getElementsByTagName("h3")
+// let birthYear = document.getElementsByTagName("h3")
+// let homeWorld = document.getElementsByTagName("h3")
 let button = document.getElementById("button") //step 11
 
 
@@ -18,34 +18,39 @@ function fetchData() { //12 to add all of the ajax to a funcation
         if (xhr.status != 200) {
             console.log(`Error ${xhr.status}: ${xhr.statusText}`);
         } else { 
+            console.log(xhr.response.homeworld)
             showData(xhr.response);  //step 10 calling the ShowData function
+
         }
     }
 }
 
-async function getHomeWorld(homeWorld) {
+async function getHomeWorld(homeworld) {
+
+    console.log(homeworld)
     try {
-        let planet = await fetch(homeWorld);
+        let planet = await fetch(homeworld);
         if (planet.status != 200) {
             throw Error;
         }
 
-        let results = await response.json();
+        let results = await planet.json();
         return (results.name)
     } catch (error) {
         console.log(error, "catch wasent so good")
     }
-
+    return resultshomeworld
 }
-getHomeWorld()
+getHomeWorld(homeworld)
     .then(res => {
         console.log(res, "your here");
     })
     //     finally {}
     // }
 
-async function showData(results) { //step 9  up to step 32 added the data to the root div
+function showData(results) { //step 9  up to step 32 added the data to the root div
     //  using createElement--setAttribute & appendChild
+
     let character = document.createElement("h3")
     let height = document.createElement("h3")
     let gender = document.createElement("h3")
@@ -60,13 +65,14 @@ async function showData(results) { //step 9  up to step 32 added the data to the
     height.innerHTML = `Height: ${results.height}(cm)`
     gender.innerHTML = `Gender: ${results.gender}`
     birthYear.innerHTML = `Birth Year: ${results.birth_year}`
-    homeWorld.innerText = `Home World: ${await getHomeWorld (results.homeWorld)}`
+    homeworld = results.homeworld
+    console.log(homeworld)
+    homeWorld.innerHTML = `Home World: ${ getHomeWorld (homeWorld)}`
     root.appendChild(character)
     root.appendChild(height)
     root.appendChild(gender)
     root.appendChild(birthYear)
     root.appendChild(homeWorld)
-
 
 }
 
@@ -78,6 +84,5 @@ function loding() {
     birthYear.innerText = ''
     homeWorld.innerText = ''
 }
-
 
 button.addEventListener('click', fetchData) //step 8
