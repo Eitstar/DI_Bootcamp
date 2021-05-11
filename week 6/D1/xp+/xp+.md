@@ -10,6 +10,8 @@ birth_date DATE
 )
 
 
+Insert
+
 SELECT * FROM students
 
 -- INSERT INTO students
@@ -21,7 +23,9 @@ SELECT * FROM students
 -- ('Amelia'	,'Dux'	,'07/04/1996'),
 -- ('David',	'Grez',	'14/06/2003'),
 -- ('Omer'	,'Simpson',	'03/10/1980')
-Insert
+
+
+
 
 
   INSERT INTO students
