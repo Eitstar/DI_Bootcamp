@@ -1,0 +1,16 @@
+{
+    "name": "gold",
+    "version": "1.0.0",
+    "main": "date.js",
+    "dependencies": {
+        "prompt": "^1.1.0"
+
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}
