@@ -21,13 +21,17 @@ nav * {
     text-align: right;
     display: inline-block;
 }
-.nav-bar {height: 120px}
+
+.nav-bar {
+    height: 120px
+}
+
 .nav-bar .nav {
     width: 30%;
     display: inline-block;
     float: right;
     text-align: right;
- }
+}
 
 .navup {
     list-style-type: none;
@@ -60,10 +64,12 @@ img {
 
 
 /* central web page */
+
 .products {
     text-align: center;
     margin-bottom: 100px;
 }
+
 .ddress1 {
     display: inline-block;
 }
@@ -92,9 +98,11 @@ img {
 .price {
     margin: 4px 0;
 }
+
 .price .current {
     margin-right: 8px;
 }
+
 .price .compared {
     text-decoration: line-through;
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoopingList</title>
+</head>
+<style>
+    h3 {
+        color: blue;
+    }
+</style>
+
+<body>
+    <form action="http://localhost:3000/shoopingList" method="POST">
+
+        <label for="">Item</label>
+        <input type="text" name="item">
+        <label for="">Amount</label>
+        <input type="text" name="amount">
+
+        <button type="submit">Submit</button>
+        <button type="submit" onClick="showData()">Show Shopping Cart</button>
+    </form>
+
+
+    <div id="root"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
