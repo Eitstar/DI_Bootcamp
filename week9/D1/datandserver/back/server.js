@@ -11,15 +11,13 @@ app.use(bp.json())
 
 app.get('/api/hello', (req, res) => {
 
-    // res.send("Hello from express")
     res.send({ 'data': 'Hello from express' })
 })
 
-app.post('/api/hello', (req, res) => {
+app.post('/api/world ', (req, res) => {
+    console.log(post);
+    res.send({ 'post': 'I received your POST request' })
 
-    res.send({ 'post': 'Post to Server' })
 })
-
-
 
 app.listen(5000, () => console.log('Example app listening on port 5000!'));
