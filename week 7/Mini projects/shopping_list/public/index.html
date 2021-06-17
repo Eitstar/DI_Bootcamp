@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>MY Shopping List</title>
+</head>
+
+<body>
+    <h3>MY Shopping List
+    </h3>
+    <form action="http://localhost:5000/shoppingList" method="POST" onsubmit="showData()">
+        Add Your Shopping Item: <input type="text" id="item" name="item" required value=""> Ammont: <input type="number" name="amount" id="amount" min="1.00" max="40.00" step="0.5" value="" required>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <div id="root"></div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
