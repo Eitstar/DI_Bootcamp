@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    background-color: aliceblue;
+}
+
+main {
+    display: inline;
+    font-size: large;
+    font-weight: 400;
+}
+
+option {
+    font-size: large;
+    font-weight: 400;
+}
+
+select,
+input {
+    margin: 10px;
+    font-size: large;
+    font-weight: 400;
+}
+
+button {
+    border-radius: 8%;
+    height: 50px;
+    width: 70px;
+}
