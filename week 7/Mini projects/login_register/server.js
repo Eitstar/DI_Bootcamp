@@ -26,10 +26,10 @@ app.route('/register')
         res.send('get in register')
     })
 
-.post((res, req) => {
+.post((req, res) => {
     console.log('post...in register')
-    console.log('req.body')
-    sendRegisterDataToDb('req.body')
+    console.log(req.body);
+
 })
 
 
@@ -41,8 +41,8 @@ app.route('/login')
 
 app.post('/', function(req, res) {
     console.log('post...in register')
-    console.log('req.body')
-
+    console.log(req.body)
+    sendRegisterDataToDb()
 })
 
 
@@ -53,7 +53,7 @@ const sendRegisterDataToDb = async(data) => {
     try {
         await registerAndLogin.connect()
         console.log('connect')
-        await registerAndLogin.query(`insert into  Register values ($1, $2, $3, $4, $5)`, [1, data.firstName, data.lastName, data.email, data.username, data.password])
+        await registerAndLogin.query(`insert into register values ($1, $2, $3, $4, $5, $6)`, [0, data.fname, data.lname, data.email, data.username, data.password])
         const result = await registerAndLogin.query('SELECT * FROM  users')
         console.table(result.rows)
     } catch (err) { err, 'at sendRegisterDataToDb' }
@@ -63,6 +63,3 @@ const sendRegisterDataToDb = async(data) => {
         await registerAndLogin.end()
     }
 }
-
-
-//insert into "users "insertdata, [returning], [options])
